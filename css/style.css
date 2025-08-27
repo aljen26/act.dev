@@ -14,7 +14,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: "CamingoCode-Regular", monospace;
-    font-size: 22px;
+    font-size: 28px;
     background-color: rgba(22, 18, 26, 1);
 }
 
@@ -56,7 +56,7 @@ nav {
 
 #main-nav a:hover {
     color: #888;
-    font-size: 23px;
+    font-size: 1.1em;
 }
 
 * .l-accent {
@@ -67,14 +67,14 @@ nav {
 #main-nav #site-name {
     font-family: "Typedeer Mono", monospace;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 1.75em;
     color: #fff;
 }
 
 #site-name .l-accent {
     color: #6C40FF;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 0.75em;
 }
 
 
@@ -104,6 +104,7 @@ header p, p span {
 
 .word-juggle {
     font-family: 'Typedeer Mono', monospace;
+    color: #FFBE0B;
 }
 
 .l-accent-2 {
