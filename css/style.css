@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Typedeer Mono";
+    src: url(../src/fonts/TypedeerMonoDemo.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'CamingoCode-Regular';
+    src: url(../src/fonts/CamingoCode-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "CamingoCode-Regular", monospace;
+    font-size: 22px;
+    background-color: rgba(22, 18, 26, 1);
+}
+
+/* Wrapper background and color */
+.wrapper {
+    background: url('../src/images/bg.svg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    color: #f9f9f9 !important;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    padding: 10px 30px;
+    height: 55px;
+    align-items: center;
+    margin: 0;
+}
+
+#main-nav a {
+    display: block;
+    text-decoration: none;
+    flex-shrink: 0;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.5s;
+    color: #f9f9f9;
+}
+
+#nav-spacer {
+    flex-grow: 1;
+}
+
+#main-nav a:hover {
+    color: #888;
+    font-size: 23px;
+}
+
+* .l-accent {
+    color: #6C40FF;
+    font-weight: bolder;
+}
+
+#main-nav #site-name {
+    font-family: "Typedeer Mono", monospace;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+}
+
+#site-name .l-accent {
+    color: #6C40FF;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+header {
+    margin-top: 55px;
+    width: 100%;
+    height: 100vh;
+}
+
+header p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 40px);
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+header p, p span {
+    font-size: 44px;
+    text-align: left;
+    word-spacing: -8px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.word-juggle {
+    font-family: 'Typedeer Mono', monospace;
+}
+
+.l-accent-2 {
+    color: #FFBE0B;
+    font-size: 35px;
+}
+
+/* Fade to left animation for name */
+.my-name {
+    display: inline-block;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.6s, transform 0.6s;
+    font-family: monospace;
+}
+
+.my-name.fade-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    color: #6C40FF;
+    position: relative;
+    z-index: 1;
+}
+
+/* Only color for .my-name */
+.my-name {
+    color: #6C40FF;
+    font-weight: bolder;
+}
